@@ -1,0 +1,11 @@
+HTML: HYPERTEXT MARKUP LANGUAGE / LINGUAGEM DE MARCAÇÃO DE HIPERTEXTO
+
+Marcas/Tags:
+
+H1: Titulo de nivel 1
+p: paragrafo
+hr: linha horizontal 
+br: quebra de linha
+&lt &gt: <>
+
+emoticon: &#xcodigo

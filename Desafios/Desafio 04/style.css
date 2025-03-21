@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&display=swap');
+
+@font-face {
+    font-family: 'idroid';
+    src: url('fontes/idroid.otf') format('opentype');
+}
+
+/* 'Gill Sans'
+    Impact
+    Tire o caralho da margem no header e no body
+*/
+
+header{
+    background-image: linear-gradient(to top, #154d2d, #278f54, #3BD57F);
+    font-family: 'Bebas','Oswald';
+    font-weight: 100;
+    color: white;
+    text-align: center;
+    text-shadow: 1px 2px 7px #17271e;
+    margin: 0px;
+    padding: 10px;
+    box-shadow: -1px 3px 11px #17271ec9;
+}
+header > h1{
+    margin: 10px;
+}
+nav{
+    text-align: left;
+    margin: 0px;
+}
+nav > a{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    margin-right: 7px;
+}
+nav > a:hover{
+    text-decoration: underline;
+}
+body{
+    margin: 0px;
+    background-color: #84E1AD;
+    text-align: center;
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+body > main{
+    background-color: white;
+    width: 800px;
+    padding: 10px;
+    margin: auto;
+    box-shadow: -1px 3px 11px #17271ec9;
+}
+main > p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    text-align: justify;
+}
+main > h1{
+    font-family: 'idroid';
+    color: #0f6134;
+    font-weight: 100;
+    text-align: left;
+}
+main > h2{
+    background-image: linear-gradient(to left, #ffffffcb, #c9f0c9ad, #8dd3ab86);
+    font-family: 'idroid';
+    color: #0f6134;
+    font-weight: 100;
+    text-align: left;
+    padding: 0px 0px 0px 10px;
+}
+h3{
+    color: white;
+    text-align: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0px;
+    
+}
+main > iframe{
+    background-color: #0f6134;
+    padding: 20px 40px 20px 30px;
+}
+section > main{
+    margin: auto;
+    text-align: center;
+    text-align: justify;
+    width: 780px;
+    border-radius: 10px;
+}
+iframe{
+    margin: 10px 10px 10px -10px;
+}
+article > p{
+    text-align:left;
+    padding: 9px;
+}
+footer > p{
+    margin: 0px;
+}
+footer{
+    background-color: #0f6134;
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    font-size: 12px;
+    padding: 4px;
+    margin: auto;
+}

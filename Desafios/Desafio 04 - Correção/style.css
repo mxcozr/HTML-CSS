@@ -1,0 +1,210 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&display=swap');
+
+@font-face {
+    font-family: 'idroid';
+    src: url('fontes/idroid.otf') format('opentype');
+}
+
+/*
+    Tire o caralho da margem no header e no body
+
+    Utilizar :root para declarar variaveis e tornar o codigo mais facil de editar futuramente
+*/
+
+:root {
+    --cor0: #ebe5c5;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+
+    --fonte-padrao: Arial, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', sans-serif;
+    --fonte-android: 'idroid';
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    background-image: linear-gradient(to top, #154d2d, #278f54, #3BD57F);
+    font-family: var(--fonte-destaque);
+    min-height: 150px;
+    color: white;
+    text-align: center;
+    text-shadow: 1px 2px 7px #17271e;
+    padding-top: 40px;
+    box-shadow: -1px 3px 11px #17271ec9;
+}
+
+header > h1{
+    font-size: 3em;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+header > p{
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+    max-width: 600px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    margin: auto;
+}
+
+nav{
+    text-align: left;
+    padding: 10px;
+}
+
+nav > a{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    transition-duration: .5s;
+    border-radius: 3px;
+}
+
+nav > a:hover{
+    text-decoration: underline;
+    background-color: var(--cor3);
+    color: var(--cor5);
+}
+
+body{
+    background-color: var(--cor0);
+}
+
+main{
+    background-color: white;
+    padding: 20px;
+    margin: auto;
+    box-shadow: 0px 0px 10px #17271ec9;
+    min-width: 320px;
+    max-width: 800px;
+}
+
+main > picture{
+    width: 100%;
+}
+
+main p{
+    margin: 15px 0px;
+    text-align: justify;
+    font-family: var(--fonte-padrao);
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 1.7em;
+}
+
+main a{
+    text-decoration: none;
+}
+
+main a:hover{
+    text-decoration: underline;
+}
+
+main img{
+    width: 100%;
+    margin: auto;
+}
+
+main img.bugdroid{
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+a.externo::after{
+    content: '\00A0\1F4CE';
+}
+
+article > h1{
+    font-family: 'idroid';
+    color: #0f6134;
+    font-weight: 100;
+    text-align: left;
+}
+
+article > h2{
+    background-image: linear-gradient(to left, #ffffffcb, #c9f0c9ad, #8dd3ab86);
+    font-family: 'idroid';
+    color: #0f6134;
+    font-weight: 100;
+    text-align: left;
+    text-indent: 8px;
+}
+
+h3{
+    color: white;
+    text-align: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0px;
+    
+}
+
+div.video{
+    background-color: var(--cor5);
+    margin: 20px -20px 20px -20px;
+    padding: 20px;
+    padding-bottom: 59%;
+    position: relative;
+}
+
+div.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+
+}
+
+aside{
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 2px 10px #17271eb4;
+}
+
+aside > ul{
+    list-style-type: '\2714\00A0\00A0'; /* 00A0\00A0 Não é compativel com todos os navegadores */
+    list-style-position: inside;
+    columns: 2;
+}
+
+aside > h3{
+    background-color: var(--cor4);
+    padding: 7px;
+    margin: -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+footer > p{
+    margin: auto;
+    text-align: center;
+    font-family: var(--fonte-padrao);
+}
+
+footer{
+    background-color: #0f6134;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    padding: 4px;
+}
+
+strong{
+    color: #0a8b45;
+    font-weight: bold;
+}

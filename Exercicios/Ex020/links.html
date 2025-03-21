@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+        /*
+        # = id
+        . = class
+        : = pseudo-class
+        ::= pseudo-elemento
+        > = children
+        */
+        
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            color: rgb(50, 133, 29);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: rgb(255, 0, 0);
+        }
+
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active{
+            color: #0ca591;
+        }
+        
+        a::after {
+            content:'[link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: rgb(196, 196, 196);
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <a href="https://www.instagram.com/mekkozr">
+            <li>Perfil do Instagram</li>
+        </a>
+        <a href="https://www.youtube.com/@mekko071">
+            <li>Canal do YouTube</li>
+        </a>
+        <a href="https://github.com/mxcozr?tab=repositories">
+            <li>Repositorio GitHub</li>
+        </a>
+    </ul>
+</body>
+</html>

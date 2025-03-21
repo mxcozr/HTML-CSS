@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        @font-face {
+            font-family: 'shark';
+            src: url('fonts/Mona Shark.otf') format('opentype');
+            font-family: 'Granite';
+            src: url('fonts/Kibbe Granite.ttf') format('opentype');
+
+            /*
+            Tipos de format()
+            - opentype (otf)
+            - truetype (ttf)
+            - embedded-opentype
+            -truetype-aat (Apple Advanced Typograph)
+            -svg
+             */
+        }
+        body{
+            font-family: 'arial';
+        }
+        h1{
+            font-family: 'Granite';
+            font-weight: normal;
+            font-size: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Título</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum saepe possimus optio, exercitationem fuga voluptatibus deleniti distinctio cupiditate enim reprehenderit, aperiam odit praesentium quos officia laboriosam ex ratione aut nesciunt.</p>
+</body>
+</html>
